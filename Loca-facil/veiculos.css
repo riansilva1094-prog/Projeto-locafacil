@@ -1,0 +1,1171 @@
+/*==================================
+GOOGLE FONTS
+==================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==================================
+RESET
+==================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/*==================================
+HEADER
+==================================*/
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    padding:18px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:transparent;
+
+    transition:.4s;
+
+    z-index:9999;
+
+}
+
+/* Fundo ao rolar */
+
+header.ativo{
+
+    background:rgba(0,0,0,.90);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.35);
+
+}
+
+/* Logo */
+
+.logo img{
+
+    width:50px;
+
+}
+
+/* Menu */
+
+nav{
+
+    display:flex;
+
+    gap:40px;
+
+}
+
+nav a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+/* Linha */
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#ff7300;
+
+    transition:.4s;
+
+}
+
+nav a:hover{
+
+    color:#ff7300;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* Botão Login */
+
+.btn-login{
+
+    background:#ff7300;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:12px 28px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.btn-login:hover{
+
+    background:#ff922d;
+
+}
+
+/*==================================
+SECTIONS
+==================================*/
+
+section{
+
+    padding:120px 8%;
+
+    scroll-margin-top:90px;
+
+}
+
+/*==================================
+HOME
+==================================*/
+
+.hero{
+
+    width:100%;
+
+    height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.80)
+    ),
+
+    url("imagens/banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.conteudo{
+
+    max-width:700px;
+
+}
+
+.mini{
+
+    color:#ff7300;
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+}
+
+.hero h1{
+
+    font-size:75px;
+
+    line-height:1.1;
+
+    margin-top:20px;
+
+}
+
+.hero h1 span{
+
+    color:#ff7300;
+
+}
+
+.hero p{
+
+    margin-top:25px;
+
+    color:#d0d0d0;
+
+    font-size:20px;
+
+    line-height:35px;
+
+}
+
+/* Botões */
+
+.botoes{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.btn-laranja{
+
+    background:#ff7300;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:16px 35px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.btn-laranja:hover{
+
+    background:#ff922d;
+
+}
+
+.btn-preto{
+
+    border:1px solid #666;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:16px 35px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.btn-preto:hover{
+
+    border-color:#ff7300;
+
+    color:#ff7300;
+
+}
+
+/*==================================
+VEÍCULOS
+==================================*/
+
+#veiculos{
+
+    min-height:100vh;
+
+}
+
+.container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.texto h2{
+
+    font-size:60px;
+
+    line-height:1.2;
+
+}
+
+.texto span{
+
+    color:#ff7300;
+
+}
+
+.card{
+
+    background:#111;
+
+    border:1px solid #ff7300;
+
+    border-radius:20px;
+
+    padding:35px;
+
+}
+
+.item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+.numero{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    border:2px solid #ff7300;
+
+    color:#ff7300;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+}
+
+/*==================================
+CONTAINER PADRÃO
+==================================*/
+
+.container2{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.container2 h2{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+/*==================================
+FORMULÁRIOS
+==================================*/
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    background:#111;
+
+    color:#fff;
+
+    border:1px solid #444;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+input:focus{
+
+    border-color:#ff7300;
+
+}
+
+button{
+
+    margin-top:25px;
+
+    padding:16px 35px;
+
+    border:none;
+
+    background:#ff7300;
+
+    color:#fff;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#ff922d;
+
+}
+
+/*==================================
+RESPONSIVO
+==================================*/
+
+@media(max-width:992px){
+
+    header{
+
+        padding:18px 5%;
+
+    }
+
+    nav{
+
+        gap:20px;
+
+    }
+
+    .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hero h1{
+
+        font-size:55px;
+
+    }
+
+    .texto h2{
+
+        font-size:42px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    .hero{
+
+        text-align:center;
+
+    }
+
+    .conteudo{
+
+        max-width:100%;
+
+    }
+
+    .botoes{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+        line-height:30px;
+
+    }
+
+}
+/*=========================
+HOME
+=========================*/
+
+/*====================================================
+HERO
+=====================================================*/
+
+.hero{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+    padding:120px 8% 80px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.72),
+        rgba(0,0,0,.78)
+    ),
+    url("imagens/porsche_catimbau.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+.hero-content{
+
+    max-width:700px;
+
+}
+
+.subtitulo{
+
+    color:#ff7b00;
+
+    text-transform:uppercase;
+
+    letter-spacing:5px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.hero h1{
+
+    margin-top:25px;
+
+    font-size:80px;
+
+    line-height:1.1;
+
+    color:#fff;
+
+}
+
+.hero h1 span{
+
+    color:#ff7b00;
+
+}
+
+.hero p{
+
+    margin-top:30px;
+
+    color:#d6d6d6;
+
+    font-size:22px;
+
+    line-height:38px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:45px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-primary{
+
+    background:#ff7b00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:18px 35px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#ff9b39;
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+    border:1px solid #666;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:18px 35px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:#ff7b00;
+
+    border-color:#ff7b00;
+
+}
+
+
+/*====================================================
+VEÍCULOS
+=====================================================*/
+
+.veiculos{
+
+    padding:120px 8%;
+
+    background:#050505;
+
+}
+
+.titulo-veiculos{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.titulo-veiculos span{
+
+    color:#ff7b00;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    font-size:14px;
+
+}
+
+.titulo-veiculos h2{
+
+    margin-top:20px;
+
+    font-size:60px;
+
+    color:#fff;
+
+}
+
+.titulo-veiculos strong{
+
+    color:#ff7b00;
+
+}
+
+.titulo-veiculos p{
+
+    margin-top:20px;
+
+    color:#c8c8c8;
+
+    font-size:20px;
+
+}
+
+
+/*====================
+FILTROS
+=====================*/
+
+.filtros{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:50px;
+
+}
+
+.filtros button{
+
+    padding:15px 28px;
+
+    background:transparent;
+
+    border:1px solid #444;
+
+    color:#fff;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.filtros button:hover,
+.filtros button.ativo{
+
+    background:#ff7b00;
+
+    border-color:#ff7b00;
+
+}
+
+
+/*====================
+GRID
+=====================*/
+
+.grid-veiculos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+
+/*====================
+CARD
+=====================*/
+
+.card-veiculo{
+
+    background:#101010;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    border:1px solid #222;
+
+}
+
+.card-veiculo:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+}
+
+.card-veiculo img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.info{
+
+    padding:25px;
+
+}
+
+.info h3{
+
+    color:#fff;
+
+    font-size:26px;
+
+    margin-bottom:12px;
+
+}
+
+.info p{
+
+    color:#b8b8b8;
+
+    margin-bottom:18px;
+
+}
+
+.info span{
+
+    display:block;
+
+    color:#ff7b00;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+.info a{
+
+    display:inline-block;
+
+    background:#ff7b00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:14px 25px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.info a:hover{
+
+    background:#ff9b39;
+
+}
+
+
+/*====================================================
+RESPONSIVO
+=====================================================*/
+
+@media(max-width:992px){
+
+.hero{
+
+    text-align:center;
+
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.titulo-veiculos h2{
+
+    font-size:48px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.hero{
+
+    padding:120px 20px 80px;
+
+}
+
+.hero h1{
+
+    font-size:45px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    line-height:30px;
+
+}
+
+.grid-veiculos{
+
+    grid-template-columns:1fr;
+
+}
+
+.titulo-veiculos h2{
+
+    font-size:38px;
+
+}
+
+.card-veiculo img{
+
+    height:220px;
+
+}
+
+}
+
+/*====================================
+PESQUISA E FILTROS
+====================================*/
+
+.pesquisa-filtros{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:50px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/*=========================
+CAMPO DE BUSCA
+==========================*/
+
+.campo-busca{
+
+    flex:1;
+
+    min-width:320px;
+
+}
+
+.campo-busca input{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    background:#111;
+
+    color:#fff;
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.campo-busca input::placeholder{
+
+    color:#888;
+
+}
+
+.campo-busca input:focus{
+
+    border-color:#ff7b00;
+
+    box-shadow:0 0 12px rgba(255,123,0,.25);
+
+}
+
+/*=========================
+SELECT
+==========================*/
+
+.campo-select{
+
+    min-width:260px;
+
+}
+
+.campo-select select{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    background:#111;
+
+    color:#fff;
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.campo-select select:focus{
+
+    border-color:#ff7b00;
+
+    box-shadow:0 0 12px rgba(255,123,0,.25);
+
+}
+
+/*=========================
+HOVER
+==========================*/
+
+.campo-select select:hover,
+.campo-busca input:hover{
+
+    border-color:#666;
+
+}
+
+/*=========================
+RESPONSIVO
+==========================*/
+
+@media (max-width:768px){
+
+    .pesquisa-filtros{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:15px;
+
+    }
+
+    .campo-busca,
+
+    .campo-select{
+
+        width:100%;
+
+        min-width:100%;
+
+    }
+
+}
+footer{
+
+    background:#111;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#aaa;
+
+}
+
